@@ -4,27 +4,47 @@
     <title>HubSpot Role Switcher</title>
     <style>
         body {
-            width: 200px;
-            padding: 10px;
+            width: 250px;
+            padding: 16px;
             font-family: Arial, sans-serif;
+            background-color: #f5f8fa;
+            margin: 0;
         }
         .role-btn {
             display: block;
             width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: none;
-            border-radius: 4px;
-            background-color: #ff7a59;
-            color: white;
+            padding: 12px;
+            margin: 8px 0;
+            border: 2px solid #ff7a59;
+            border-radius: 6px;
+            background-color: white;
+            color: #33475b;
             cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            position: relative;
         }
         .role-btn:hover {
-            background-color: #ff8f73;
+            background-color: #fff1ee;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 4px rgba(255, 122, 89, 0.1);
+        }
+        .role-btn.selected {
+            background-color: #ff7a59;
+            color: white;
+            box-shadow: 0 2px 4px rgba(255, 122, 89, 0.2);
+        }
+        .role-btn.selected::before {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         h2 {
             color: #33475b;
-            margin-bottom: 15px;
+            margin: 0 0 16px 0;
+            font-size: 18px;
+            font-weight: 600;
         }
     </style>
 </head>

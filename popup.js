@@ -6,20 +6,20 @@ document.addEventListener('DOMContentLoaded', function() {
         if (result.selectedRole) {
             const button = document.getElementById(result.selectedRole);
             if (button) {
-                button.style.backgroundColor = '#ff8f73';
+                button.classList.add('selected');
             }
         }
     });
 
     roles.forEach(role => {
         document.getElementById(role).addEventListener('click', async () => {
-            // Reset all buttons to default color
+            // Reset all buttons to default state
             roles.forEach(r => {
-                document.getElementById(r).style.backgroundColor = '#ff7a59';
+                document.getElementById(r).classList.remove('selected');
             });
             
-            // Highlight selected button
-            document.getElementById(role).style.backgroundColor = '#ff8f73';
+            // Add selected class to clicked button
+            document.getElementById(role).classList.add('selected');
             
             // Save role selection
             chrome.storage.sync.set({ selectedRole: role });

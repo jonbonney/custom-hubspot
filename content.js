@@ -10,6 +10,7 @@ function applySalesRole() {
         'automation-branch-toggle',
         'commerce-branch-v5-toggle',
         'marketing-toggle',
+        'web-content-toggle'
     ];
 
     hideElements.forEach(elementId => {
@@ -34,6 +35,7 @@ function applyMarketingRole() {
         'marketing-branch-toggle',
         'automation-branch-toggle',
         'commerce-branch-v5-toggle',
+        'web-content-toggle'
     ];
 
     hideElements.forEach(elementId => {
@@ -62,6 +64,7 @@ function applyDevelopmentRole() {
         'automation-branch-toggle',
         'commerce-branch-v5-toggle',
         'marketing-toggle',
+        'web-content-toggle'
     ];
 
     showElements.forEach(elementId => {
