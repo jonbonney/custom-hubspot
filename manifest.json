@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Custom HubSpot",
+    "version": "1.0",
+    "description": "Customizes HubSpot UI for our company.",
+    "permissions": ["scripting", "tabs", "storage"],
+    "host_permissions": ["https://*.hubspot.com/*"],
+    "icons": {
+        "16": "icon16.svg",
+        "128": "icon128.svg"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.svg",
+            "128": "icon128.svg"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.hubspot.com/*"],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ]
+}
+  

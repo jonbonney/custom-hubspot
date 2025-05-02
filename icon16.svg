@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="8" cy="8" r="7.5" fill="#ff7a59"/>
+    
+    <!-- Three interconnected circles representing different roles -->
+    <circle cx="8" cy="5.5" r="2.5" fill="white" opacity="0.9"/>
+    <circle cx="5.5" cy="10.5" r="2.5" fill="white" opacity="0.9"/>
+    <circle cx="10.5" cy="10.5" r="2.5" fill="white" opacity="0.9"/>
+    
+    <!-- Center triangle connecting the circles -->
+    <path d="M8,5.5 L5.5,10.5 L10.5,10.5 Z" fill="#ff7a59"/>
+</svg> 
